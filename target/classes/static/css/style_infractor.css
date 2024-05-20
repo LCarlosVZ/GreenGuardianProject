@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: darkslategrey;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px greenyellow;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block; /* Mostrar los labels en bloques para separar verticalmente */
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+input,
+select,
+button {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Esquinas redondas */
+    box-sizing: border-box;
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+

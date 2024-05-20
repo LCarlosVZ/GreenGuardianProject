@@ -1,0 +1,125 @@
+body {
+    background-image: url('../formulario/fondo_formulario.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center; /* Centrar el contenido de h1 y h2 */
+    color: white;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #013220; /* Bordes verde oscuro */
+    border-radius: 10px; /* Esquinas curvas */
+}
+
+/* Estilos para campos inválidos y advertencias */
+input.invalid,
+select.invalid {
+    border-color: red; /* Cambia el borde a rojo para campos no completados */
+}
+
+.invalid-warning {
+    color: red; /* Color rojo para la advertencia */
+    font-size: 12px; /* Tamaño de fuente más pequeño para la advertencia */
+}
+
+/* Estilo para el botón de "Guardar Datos" inactivo */
+button:disabled {
+    background-color: #ccc; /* Color de fondo gris */
+    color: #999; /* Color de texto gris claro */
+}
+
+label {
+    color: #013220; /* Color verde oscuro */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #013220; /* Bordes verde oscuro */
+    border-radius: 5px; /* Esquinas curvas */
+}
+
+button {
+    background-color: #013220; /* Fondo verde oscuro */
+    color: white; /* Texto en blanco */
+    font-weight: bold; /* Texto en negrita */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Esquinas curvas */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #0d5244; /* Cambio de color al pasar el cursor */
+}
+
+.form-pair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-pair > div {
+    flex-basis: 48%;
+}
+
+
+.uppercase-hint {
+    color: red; /* Cambia a verde si hay una mayúscula */
+}
+
+.number-hint {
+    color: red; /* Cambia a verde si hay un número */
+}
+
+.length-hint {
+    color: red; /* Cambia a verde si hay 8 caracteres */
+}
+
+
+/* Estilos para campos inválidos y advertencias */
+.invalid-field {
+    border-color: red; /* Cambia el borde a rojo para campos no completados */
+}
+
+.invalid-warning {
+    color: red; /* Color rojo para la advertencia */
+    font-size: 12px; /* Tamaño de fuente más pequeño para la advertencia */
+}
+
+/* Estilo para los textos de contraseña */
+.password-hints {
+    margin-top: 5px;
+}
+
+.password-hint {
+    color: red; /* Color rojo por defecto */
+    font-size: 10px; /* Tamaño de fuente más pequeño */
+    margin-bottom: 3px;
+}
+
+.password-hint.valid-hint {
+    color: #28a745; /* Color verde claro si es válido */
+}
+
+

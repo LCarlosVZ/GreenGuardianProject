@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GreenGuardianProjectApplication<GreenGuardianProject>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.greenguardian.greenguardianproject.GreenGuardianProjectApplication",
+            "projectName": "GreenGuardianProject",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

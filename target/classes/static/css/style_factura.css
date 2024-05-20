@@ -1,0 +1,80 @@
+
+/* Estilos para la impresión */
+@media print {
+    /* Mostrar el texto solo al imprimir */
+    .hide-on-screen {
+        display: block;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    /*background-image: url('fondo_factura.png'); */
+}
+
+h3 {
+    color: red;
+}
+
+/* Estilos para el formulario */
+#formulario-factura {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-gap: 10px; /* Espacio entre columnas */
+    max-width: 800px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Margen centralizado */
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 10px); /* Ancho del campo, considerando el espacio del borde */
+    padding: 5px;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+/* Estilos para los botones */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos al pasar el cursor sobre los botones */
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos específicos para el botón "Salir" */
+#salir {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos específicos para el botón "Imprimir" */
+#imprimir {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio disponible en dos columnas iguales */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+

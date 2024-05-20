@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura de Multa</title>
+</head>
+<body>
+<div id="factura-container">
+    <h1>Factura de Multa</h1>
+    <div id="ciudadano-info"></div>
+    <div id="policia-info"></div>
+    <div id="multa-info"></div>
+    <div id="delito-info"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const infractorData = JSON.parse(localStorage.getItem('infractorData'));
+
+        if (infractorData) {
+            const ciudadanoInfo = document.getElementById('ciudadano-info');
+            const policiaInfo = document.getElementById('policia-info');
+            const multaInfo = document.getElementById('multa-info');
+            const delitoInfo = document.getElementById('delito-info');
+
+            ciudadanoInfo.innerHTML = `<h2>Ciudadano</h2><p>Nombre: ${infractorData.ciudadano.nombreInfractor}</p><p>Cédula: ${infractorData.ciudadano.cedulaInfractor}</p>`;
+            policiaInfo.innerHTML = `<h2>Policía</h2><p>Nombre: ${infractorData.policia.nombrePolicia}</p><p>Placa: ${infractorData.policia.placaPolicia}</p>`;
+            multaInfo.innerHTML = `<h2>Multa</h2><p>Fecha: ${infractorData.multa.fechaMulta}</p><p>Valor: ${infractorData.delito.valorMulta}</p>`;
+            delitoInfo.innerHTML = `<h2>Delito</h2><p>Nombre: ${infractorData.delito.nombreDelito}</p><p>Ley Infringida: ${infractorData.delito.leyInfringida}</p><p>Descripción: ${infractorData.delito.descripcionInfraccion}</p>`;
+        } else {
+            // Manejar el caso de que no haya datos en el almacenamiento local
+            console.error('No se encontraron datos de infractor');
+        }
+
+        // Limpiar el almacenamiento local después de mostrar la factura
+        localStorage.removeItem('infractorData');
+    });
+</script>
+
+<button type="button" id="salir">Salir</button>
+<button type="button" id="imprimir">Imprimir</button>
+
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
+</body>
+
+</html>
+
+
+

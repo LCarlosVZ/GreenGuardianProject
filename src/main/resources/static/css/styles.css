@@ -1,0 +1,135 @@
+body {
+    background-image: url('../multa/ciudadano/fondo_multa.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+/* Estilos para los botones */
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Para que los botones estén uno al lado del otro */
+    margin-top: 20px;
+}
+
+button {
+    width: 45%; /* Cambia el ancho de los botones */
+    padding: 10px;
+    background-color: black; /* Color de fondo predeterminado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button.cancelar {
+    background-color: black; /* Color de fondo para el botón "Cancelar" */
+}
+
+button.siguiente {
+    background-color: darkgreen; /* Color de fondo para el botón "Siguiente" */
+    color: white;
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+/* Estilos específicos para el campo de correo electrónico */
+#correoElectronico {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Estilos para indicar error en el campo de correo electrónico */
+#correoElectronico.error {
+    border-color: red;
+}
+
+
+/* Otros estilos */
+
+#cancelar-multa {
+    float: right;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#cancelar-multa:hover,
+#cancelar-multa:focus {
+
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+}

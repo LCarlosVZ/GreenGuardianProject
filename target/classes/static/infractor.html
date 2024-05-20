@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenGuardian - Consulta de Infracciones Ambientales</title>
+    <link rel="stylesheet" href="css/style_infractor.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<script src="js/infractor.js"></script>
+<body>
+<h1>GreenGuardian</h1>
+<h3>Consultar Infracciones Ambientales</h3>
+
+<form id="formulario-infractor" action="/infractor" method="post">
+
+    <label for="cedulaInfractor">Digite Su Número De Identificación:</label><br>
+    <input type="text" id="cedulaInfractor" name="cedulaInfractor" required><br><br>
+
+    <button type="submit" id="consultar-infracciones" disabled>Consultar</button>
+    <button type="button" id="home-button">Home</button>
+</form>
+
+
+</body>
+</html>

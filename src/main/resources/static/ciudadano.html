@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGuardian - Multa por Infracciones Ambientales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="multa/ciudadano/favicon.ico" type="image/x-icon">
+</head>
+<script src="js/ciudadano.js"></script>
+<body>
+<h1>Conforme a la Ley 2111 de 2021 procede la siguiente multa</h1>
+<h2>Registro De Ciudadano Infractor</h2>
+<form id="ciudadanoForm" action="/ciudadano" method="post">
+    <label for="nombreInfractor">Nombre De Infractor:</label>
+    <input type="text" id="nombreInfractor" name="nombreInfractor" required>
+
+    <label for="tipoIdentificacion">Tipo De Identificación:</label>
+    <select id="tipoIdentificacion" name="tipoIdentificacion" required>
+        <option value="cedula">Cédula</option>
+        <option value="t_identidad">Tarjeta De Identidad</option>
+        <option value="passport">Pasaporte</option>
+    </select>
+
+    <label for="cedulaInfractor">Cédula De Infractor:</label>
+    <input type="text" id="cedulaInfractor" name="cedulaInfractor" required>
+
+    <label for="ciudadExpedicion">Ciudad De Expedición:</label>
+    <input type="text" id="ciudadExpedicion" name="ciudadExpedicion" required>
+
+    <label for="departamentoResidencia">Departamento De Residencia:</label>
+    <input type="text" id="departamentoResidencia" name="departamentoResidencia" required>
+
+    <label for="municipioResidencia">Municipio De Residencia:</label>
+    <input type="text" id="municipioResidencia" name="municipioResidencia" required>
+
+    <label for="direccionResidencia">Dirección De Residencia:</label>
+    <input type="text" id="direccionResidencia" name="direccionResidencia" required>
+
+    <label for="numeroTelefono">Número De Telefono:</label>
+    <input type="tel" id="numeroTelefono" name="numeroTelefono" required>
+
+    <label for="correoElectronico">Correo Electronico:</label>
+    <input type="email" id="correoElectronico" name="correoElectronico" required>
+
+    <div class="buttons">
+        <button type="button" class="cancelar" onclick="cancelar()">Cancelar</button>
+        <button type="submit">Siguiente</button>
+    </div>
+</form>
+
+
+</body>
+</html>

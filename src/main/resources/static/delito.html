@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGuardian - Multa por Infracciones Ambientales</title>
+    <link rel="stylesheet" href="multa/delito/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<script src="js/delito.js"></script>
+<body>
+<h1>Conforme a la Ley 2111 de 2021 procede la siguiente multa</h1>
+<h2>Registro de Delito</h2>
+<form id="delitoForm" action="/delito" method="post">
+
+    <label for="nombreDelito">Nombre Del Delito:</label>
+    <select id="nombreDelito" name="nombreDelito" required>
+    </select>
+
+    <label for="leyInfringida">Ley Infringida:</label>
+    <input type="text" id="leyInfringida" name="leyInfringida" value="Ley 2111 de 2021" readonly>
+
+    <label for="valorMulta">Valor De Multa:</label>
+    <input type="text" id="valorMulta" name="valorMulta" readonly required>
+    <br><br>
+    <label for="descripcionInfraccion">Descripción De Infracción:</label>
+    <textarea id="descripcionInfraccion" name="descripcionInfraccion" rows="4" style="width: 100%;" required></textarea>
+
+    <label for="cedulaInfractor">Cédula De Infractor:</label>
+    <input type="text" id="cedulaInfractor" name="cedulaInfractor" required>
+
+    <div class="buttons">
+        <button type="button" class="atras">Atrás</button>
+        <button type="button" class="cancelar">Cancelar</button>
+        <button type="submit" class="siguiente">Siguiente</button>
+    </div>
+</form>
+</body>
+</html>
