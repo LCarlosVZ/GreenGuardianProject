@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('ciudadanoForm');
-    const correoInput = document.getElementById('correoElectronico'); // Obtenemos la referencia al input del correo electrónico una vez
+    const correoInput = document.getElementById('correoElectronico'); // Obtener la referencia al input del correo electrónico una vez
 
     form.addEventListener('input', function() {
         const nombreInfractor = document.getElementById('nombreInfractor').value;
@@ -75,15 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(data => {
                 console.log('Éxito:', data);
-                // Después de que el usuario complete el formulario en ciudadano.html guardar el valor de "Cédula De Infractor" en el almacenamiento local
-                //const cedulaInfractor = document.getElementById('cedulaInfractor').value;
-                //localStorage.setItem('cedulaInfractor', cedulaInfractor);
             })
             .catch(error => {
                 console.error('Error:', error);
             })
             .finally(() => {
-                // Redirigir a policia.html después de enviar el formulario, independientemente de la respuesta del servidor
+                // Redirigir a policia.html después de enviar el formulario
                 setTimeout(function() {
                     window.location.href = 'policia.html';
                 }, 300); // Retraso de 300 milisegundos

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const usuarioValido = credenciales.some(credencial => credencial.usuario === usuario && credencial.contrasena === contrasena);
         if (usuarioValido || (sessionStorage.getItem('usuario') === usuario && sessionStorage.getItem('contrasena') === contrasena)) {
             // Redireccionar al usuario a la página correspondiente
-            window.location.href = '../ciudadano.html';
+            window.location.href = 'ciudadano.html';
         } else {
             alert('Usuario o contraseña incorrectos');
         }

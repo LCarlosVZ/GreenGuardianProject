@@ -10,15 +10,24 @@ body {
         display: block;
     }
 }
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
-    /*background-image: url('fondo_factura.png'); */
 }
 
-h3 {
+h1 {
     color: red;
+}
+
+/* Contenedor del formulario con borde negro */
+#factura-container {
+    border: 2px solid #000; /* Borde negro */
+    padding: 20px; /* Espacio interno */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Margen centralizado */
+    background-color: #fff; /* Fondo blanco */
 }
 
 /* Estilos para el formulario */
@@ -81,4 +90,3 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
-

@@ -82,9 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Manejar el error según sea necesario
                 })
                 .finally(() => {
-                    // Guardar el valor de "Cédula De Infractor" en el almacenamiento local
-                    //const cedulaInfractor = document.getElementById('cedulaInfractor').value;
-                    //localStorage.setItem('cedulaInfractor', cedulaInfractor);
 
                     // Redirigir a la siguiente página después de enviar los datos
                     setTimeout(function() {

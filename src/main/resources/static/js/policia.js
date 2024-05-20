@@ -32,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(data => {
                 console.log('Éxito:', data);
-                // Guardar el valor de "Placa De Policía" en el almacenamiento local después de enviar el formulario
-                //const placaPolicia = document.getElementById('placaPolicia').value;
-                //localStorage.setItem('placaPolicia', placaPolicia);
 
                 // Redirigir a delito.html
                 window.location.href = 'delito.html';

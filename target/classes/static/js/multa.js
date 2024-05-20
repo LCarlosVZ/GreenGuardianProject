@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Preguntar al usuario si desea ingresar otra multa
                 const confirmacion = confirm('¿Desea ingresar otra multa?');
                 if (confirmacion) {
-                    window.location.href = '/ciudadano.html';
+                    window.location.href = 'ciudadano.html';
                 } else {
-                    window.location.href = '/index.html';
+                    window.location.href = 'index.html';
                 }
             });
     });

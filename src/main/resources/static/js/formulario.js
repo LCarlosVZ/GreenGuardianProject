@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             registroForm.reset();
         } else {
             // Redirigir a la página de inicio
-            window.location.href = '../index.html';
+            window.location.href = 'index.html';
         }
     });
 });
