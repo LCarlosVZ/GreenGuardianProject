@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura de Multa</title>
+    <link rel="stylesheet" href="css/style_factura.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/factura.js" defer></script>
 </head>
 <body>
 <div id="factura-container">
@@ -12,6 +15,13 @@
     <div id="policia-info"></div>
     <div id="multa-info"></div>
     <div id="delito-info"></div>
+</div>
+
+<p id="pague-info" class="hide-on-screen">Pague en Bancolombia, Banco de Bogotá, Davivienda o puntos Gana</p>
+
+<div class="buttons">
+    <button id="imprimir">Imprimir</button>
+    <button id="salir">Salir</button>
 </div>
 
 <script>
@@ -38,8 +48,6 @@
     });
 </script>
 
-<button type="button" id="salir">Salir</button>
-<button type="button" id="imprimir">Imprimir</button>
 
 <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
 

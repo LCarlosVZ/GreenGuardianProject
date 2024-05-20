@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const credenciales = [
         {
             "usuario": "usuarioadmin",
-            "contrasena": "123456",
+            "contrasena": "U12L3456",
             "autenticado": true
         },
         {
