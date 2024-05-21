@@ -74,5 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'index.html';
         }
     });
+
+    document.getElementById('salir').addEventListener('click', () => {
+        const confirmacion = confirm('¿Está seguro de salir?');
+        if (confirmacion) {
+            window.location.href = 'index.html';
+        }
+    });
+
 });
 
